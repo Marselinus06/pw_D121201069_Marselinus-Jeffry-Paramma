@@ -1,0 +1,72 @@
+###
+
+GET http://localhost:3001/movies
+
+###
+GET http://localhost:3001/movies/topPicks
+
+###
+GET http://localhost:3001/movies/action
+
+### find specific movie
+GET http://localhost:3001/movie/639c2b84c78dcbc8dd208734
+
+### Action, Horror, thriller, Romance, Drama, Scifi, Historical, Family, Fantasy, Comedy
+
+POST http://localhost:3001/movie/new
+Content-Type: application/json
+
+{
+    "title": "",
+    "year": ,
+    "rating": ,
+    "topPicks": ,
+    "genres": [""],
+    "duration": ,
+    "synopsis": "",
+    "authors": "",
+    "trailerLink": "",
+    "portraitImg": "",
+    "landscapeImg": "",
+    "photos": ["", "", "", "", ""],
+    "topCasts": [
+        {
+            "face": "",
+            "namaAsli": "",
+            "namaDiFilm": ""
+        },
+        {
+            "face": "",
+            "namaAsli": "",
+            "namaDiFilm": ""
+        },
+        {
+            "face": "",
+            "namaAsli": "",
+            "namaDiFilm": ""
+        },
+        {
+            "face": "",
+            "namaAsli": "",
+            "namaDiFilm": ""
+        },
+        {
+            "face": "",
+            "namaAsli": "",
+            "namaDiFilm": ""
+        }
+    ]
+}
+
+### add to watchlist
+GET http://localhost:3001/movie/addToWatchlist/639c2b84c78dcbc8dd208734
+
+###commenttttt
+GET http://localhost:3001/movie/comment/639c2c08c78dcbc8dd208813
+
+
+### like comment
+GET http://localhost:3001/movie/639c2c08c78dcbc8dd208813/like/639c3383e016d4f88f8c040b
+
+###
+DELETE http://localhost:3001/movie/delete/639bcf0a61b2994df1eaa1a1
